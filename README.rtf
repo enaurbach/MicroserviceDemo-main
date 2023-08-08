@@ -28,17 +28,18 @@ How to use these files for a FileMaker Server demo using a Windows server:\
 \pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
 \ls2\ilvl0\cf0 {\listtext	1.	}On a client machine, download, unzip and open the \'93MicroserviceDemo.fmp12.zip\'94 file in FileMaker Pro.\
 {\listtext	2.	}Use the menu to open File > Manage > Security and create a new Full Access account with a password.  Disable the Admin account.  Alternatively, just add a password for Admin.\
-{\listtext	3.	}Upload the .fmp12 to the server. \
+{\listtext	3.	}Upload the .fmp12 file to the server. \
 {\listtext	4.	}Download (upload?) this repository to the server machine and unzip in a convenient location.\
 \pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
 \ls2\ilvl0\cf0 {\listtext	5.	}Open a cmd window and cd to the MicroserviceDemo-main folder.\
 {\listtext	6.	}In the cmd terminal, type \'93npm install\'94 and Enter.\
 {\listtext	7.	}In the cmd terminal, type \'93npm start\'94 and Enter.  The microservice is now available for REST POST requests. \
-{\listtext	8.	}Open the hosted .fmp12 file in FileMaker Pro.  The demo scripts can now be run by clicking the \'93Run PSOS\'94 button.\
+{\listtext	8.	}Open the hosted .fmp12 file in FileMaker Pro on the client machine.  The demo scripts can now be run by clicking the \'93Run PSOS\'94 button.\
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 \cf0 \
-How to make the microservice available whenever the server machine restarts:\
+How to make the microservice available whenever the Windows server machine restarts:\
 \
 \pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
-\ls3\ilvl0\cf0 {\listtext	1.	}Edit the \
+\ls3\ilvl0\cf0 {\listtext	1.	}Edit the first line of the StartLcs.bat file to reflect the location of the file.\
+{\listtext	2.	}Open Task Scheduler and click Create Basic Task to Start a program specified as the StartLcs.bat file.  Set the Triggers to At startup. \
 }
